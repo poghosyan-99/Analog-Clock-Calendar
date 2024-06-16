@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: rgb(204, 206, 208);
+}
+
+
+/* Calendar */
+.calendar {
+    width: 400px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 17px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+#prev,
+#next {
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.weekdays, .days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.weekdays div, .days div {
+    width: 14.28%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.weekdays {
+    border-top: 1px solid #ccc;
+    background-color: #333;
+    color: #fff;
+}
+
+
+.days div {
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.days div:hover {
+    background-color: #f0f0f0;
+}
+
+/* Clock */
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#time {
+    width: 280px;
+    padding: 15px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 3px 3px 7px rgba(128, 128, 128, 0.543);
+    border-radius: 10px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+#clockContainer {
+    position: relative;
+    margin: auto;
+    height: 350px;
+    width: 350px;
+    background: url(Clock.png) no-repeat;
+    background-size: 100%;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.543);
+}
+ 
+#hour,
+#minute,
+#second {
+    position: absolute;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+ 
+#hour {
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+    border-radius: 50%;
+    background: black;
+}
+ 
+#minute {
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+    border-radius: 50%;
+    background-color: #202933;
+}
+ 
+#second {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+    border-radius: 50%;
+    background-color: rgb(89, 90, 92);
+}
+
+
